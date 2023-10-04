@@ -1,0 +1,35 @@
+ 
+  .blog-card-container {
+    background: var(--darker-blue); 
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  
+  .blog-card {
+    padding: 20px; 
+    width: 400px; 
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-bottom-right-radius: 20px;
+    position: relative; 
+    z-index: 100; 
+  }
+
+  .blog-card::after {
+    content: "";
+    position: absolute; 
+    height: 30px; 
+    width: 30px; 
+    transform: rotate(-45deg);
+    background: white;
+    bottom: -10px; 
+    z-index: -1;
+  }
+
+  .blog-card-image {
+    width: 100%; 
+
+  }
