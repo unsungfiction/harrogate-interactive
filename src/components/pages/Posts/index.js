@@ -2,6 +2,10 @@ import React, {useEffect, useState} from 'react';
 import { Link, useParams } from 'react-router-dom'
 import axios from 'axios';
 import './index.css'
+import FadeInSection from '../../common/FadeInSection'
+
+import Lion from "./lion.jpg";
+
 
 const Posts = () => {
  
@@ -18,7 +22,19 @@ axios.get(url).then((res) => {
 }, []);
     return (
         <>
-     <h1>Posts</h1>
+        <div id="posts-body">
+
+        <div className="fullscreen">
+    <div className="letterbox" id="letterBox">
+    <div className="sheep-container">  <img className="sheep" src={Lion}/></div>
+   <div className="hero-text"> <h1 className="large-feature-text">The fresh scent of <span className="standout-block">ideas</span></h1></div>
+
+ 
+    </div>
+    </div>
+
+     <h1 id="posts-header">Posts</h1>
+     <FadeInSection>
            <div className="blog-card-container">
          
         {
@@ -28,17 +44,19 @@ axios.get(url).then((res) => {
                 <div key={post.id} className="blog-card">
 
                     <Link to={`/${post.slug}`}>
-                    <img src="https://tritonsubs.com/wp-content/uploads/2020/07/Placeholder-16x9-1.jpg" className="blog-card-image"/>
-                <h2>{post.title.rendered}</h2>
+                    <img src={post.featured_src} className="blog-card-image"/>
+                <h2 className="post-headline">{post.title.rendered}</h2>
               
                             
-                <p dangerouslySetInnerHTML = {{__html: post.excerpt.rendered}}></p>
+                <p dangerouslySetInnerHTML = {{__html: post.excerpt.rendered}} className="post-excerpt"></p>
                 </Link>
                 </div>                
                 )
             }) :  'Loading...'
        
         }
+    </div>
+    </FadeInSection>
     </div>
     </> )
 }

@@ -1,0 +1,52 @@
+<svg
+   width="158.52mm"
+   height="162.19mm"
+   version="1.1"
+   viewBox="0 0 158.52 162.19"
+   id="svg14"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnsSvg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs18" />
+  <g
+     transform="translate(-21.332,-86.466)"
+     id="g12">
+    <g
+       transform="matrix(4.1537,0,0,4.1537,-1046.3,-779.45)"
+       id="g10">
+      <rect
+         x="258.04001"
+         y="209.47"
+         width="36.150002"
+         height="37.035999"
+         ry="3.4000001"
+         fill="none"
+         stroke="#000036"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="2.012"
+         id="rect2" />
+      <g
+         aria-label="h"
+         id="h_section"
+         style="font-size:31.559px;line-height:1.25;font-family:'BD BillDing';fill:#000036;stroke-width:0.78896">
+        <g
+           id="g1410">
+          <path
+            
+             style="color:#000000;-inkscape-stroke:none"
+             d="m 275.58647,222.7852 v -7.35325 h -8.42625 v 25.12097 h 8.42625 v -9.34147 h 1.04145 v 9.34147 h 8.42625 V 222.7852 Z"
+             id="square_section"/>
+        </g>
+      </g>
+      <rect
+         x="276.41"
+         y="215.46001"
+         width="8.6513004"
+         height="6.4238"
+         fill="#00e5b2"
+         stroke-opacity="0"
+         id="rect8" />
+    </g>
+  </g>
+</svg>

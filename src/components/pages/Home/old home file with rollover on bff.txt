@@ -1,0 +1,51 @@
+import { React, useState} from 'react';
+import "./index.css";
+import video from "./video.mp4";
+import ContactUs from "../ContactUs";
+
+
+
+
+const Home = () => {
+
+let revealExplanation = () => {document.getElementById('explanation').style.fontSize = '10pt';document.getElementById('explanation').style.opacity = '1'; setExplanation(false); document.querySelector('.explanation-text').style.background = 'var(--brand-main)';
+
+}
+
+let hideExplanation = () => {document.getElementById('explanation').style.fontSize = '0.0002pt';document.getElementById('explanation').style.opacity = '0'; setExplanation(true);document.querySelector('.explanation-text').style.background = 'none';
+
+}
+
+const [explanationSet, setExplanation] = useState(true);
+return (
+    <div className="flex-centered-column container">
+   
+    <div className="flex-centered flex-column letterbox">
+        <video loop muted autoPlay controls = '' className="hero-video"><source src={ video } type="video/mp4"/>dd</video>
+   <div> <h1 className="large-feature-text white-text overlay-text">Digital design handmade in Harrogate<span id="standout" className="standout-text" onMouseOver={()=>{explanationSet ? revealExplanation() : hideExplanation()}}>BFF*</span></h1></div>
+
+  <div>  <p className="explanation-text" onClick={()=>{explanationSet ? revealExplanation() : hideExplanation()}}><span className="bff">*BFF:</span><span id="explanation"> <u>B</u>eautiful, <u>f</u>un & <u>f</u>unctional digital design</span></p></div>
+    </div>
+    
+    <div className="flex-centered-start full-width">
+
+    <div className="blue-panel two-thirds-width"> 
+    <h1 className="gradient-text line-to-left">Digital projects crafted in Harrogate, North Yorkshire</h1>
+    <p>At Harrogate Interactive we're all about creating digital products that look good and work beautifully.<br/> <br/> Chat to us about:<br/><br/>Web design
+    <br/>Branding<br/>Online tools, apps and games<br/>Education</p>
+    </div>
+
+    <div className="one-third-width contact-form-home"> 
+    <h1 class="feature"> Get in touch </h1>
+    <ContactUs/>
+
+    </div>
+
+    </div>
+
+    
+
+    </div>
+)}
+
+export default Home; 

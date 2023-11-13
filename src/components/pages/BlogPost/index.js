@@ -29,11 +29,17 @@ function BlogPost() {
   }
 
   // Render your blog post content here
-  return (
-    <div>
+  return (<>
+  
+      <div className="blog-post-spacer"><h1>HARROGATE INTERACTIVE | DIGITAL CREATIVITY HANDMADE IN HARROGATE</h1></div>
+    <div className="blog-post-container">
+     
       <h1>{post.title.rendered}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+      <div className="blog-content" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
+    
+    </>
+
   );
 }
 
