@@ -28,7 +28,7 @@ let notFilled = true;
       <input id="emailArea" type="email" name="user_email" placeholder="Your email address"/>
       <label>Your message (it's OK to just say hi)</label>
       <textarea id="messageArea" name="message" placeholder="Your message (it's OK to just say hi)"/>
-      <p>We will get back to you asap :) </p>
+      <p>I'll get back to you asap 👍🏽</p>
       <input id="submitButton" type="submit" value="Send" />
     </form>
   );
