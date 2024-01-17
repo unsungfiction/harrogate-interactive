@@ -31,7 +31,7 @@ return (
     <div id="techy-section" className="container">
 
 
-<div id="techBox"><h1  className="line-to-left">Interactive web development for connoisseurs of fine pixels</h1><p>Hi. This site is for hosting and signposting the interactive projects I work on in my spare time. These could be games, websites, apps, tools and whatever else takes my fancy. Everything is put together with love using the languages of the web: HTML, CSS, PHP and Javascript. When it comes to web development, my interests are: interactive design, web design, problem solving, storytelling and gamification. 
+<div id="techBox"><h1  className="line-to-left">Interactive web development</h1><p>Hi. This site is for hosting and signposting the interactive projects I work on in my spare time. These could be games, websites, apps, tools and whatever else takes my fancy. Everything is put together with love using the languages of the web: HTML, CSS, PHP and Javascript. When it comes to web development, my interests are: interactive design, web design, problem solving, storytelling and gamification. 
 <br/></p></div>
 
 <div id="iconsbox">
