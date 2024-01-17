@@ -6,7 +6,10 @@ import FadeInSection from '../../common/FadeInSection'
 import { MdOutlineWeb, MdOutlineStar, MdToggleOn, MdLocalLibrary, MdQuestionAnswer, MdAccessibilityNew, MdFavoriteBorder } from 'react-icons/md';
 import { FaReact, FaHtml5, FaCss3, FaAngleDown, FaHeart } from 'react-icons/fa6';
 import HGBackground from './hg2.jpg';
-
+import dogOffice from './office.jpg';
+import Ability from './ability.JPG';
+import CSM from './csm.JPG';
+import CSM2 from './CSM2.JPG';
 const Home = () => {
 
  
@@ -15,20 +18,83 @@ const Home = () => {
 return (
     <div className="overall-container">
    <div className="fullscreen">
+    {/* <div className="letterbox" id="letterBox" style={{background: 'linear-gradient(45deg, #00e5b3dd,#000036dd,#000000ff), url(' + fancyBG + ')', backgroundSize: 'cover',backgroundRepeat:'no-repeat' }}> */}
     <div className="letterbox" id="letterBox">
-    <div className="hero-video-container">  <video loop muted autoPlay controls = '' className="hero-video"><source src={ video } type="video/mp4"/></video></div>
-   <div className="hero-text"> <h1 className="large-feature-text">Digital creativity <span className=""><span className="standout-block">handmade</span> in Harrogate</span></h1></div>
-
+    <div className="hero-text"> <h1 className="large-feature-text">Fancy software <span>handmade</span> in Harrogate</h1></div>
+    <div className="dogoffice"><img src={dogOffice}/></div>
+    {/* <div className="hero-video-container">  </div> */}
+   
  
     </div>
     </div>
+
+    <div id="techy-section" className="container">
+
+
+<div id="techBox"><h1  className="line-to-left">Interactive web development for connoisseurs of fine pixels</h1><p>Hi. This site is for hosting and signposting the interactive projects I work on in my spare time. These could be games, websites, apps, tools and whatever else takes my fancy. Everything is put together with love using the languages of the web: HTML, CSS, PHP and Javascript. When it comes to web development, my interests are: interactive design, web design, problem solving, storytelling and gamification. 
+<br/></p></div>
+
+<div id="iconsbox">
+
+    <h2 className="icon" id="html5-icon">
+    <FaHtml5/>
+    </h2>
+    <h2 className="icon" id="css3-icon">
+    <FaCss3/>
+    </h2>
+    <h2 className="icon" id="react-icon">
+    <FaReact/>
+    </h2>
+</div>
+
+</div>
+
+
+<div id="hackability" className="feature-container darker">
+<div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">HackAbility</h1><p>This cyber security game is designed to get people thinking about passwords. In the game, you spend 60 seconds trying to work out a random series of four-letter words (no bad language, I'm afraid - you'll have to go elsewhere for that sh*t). Then at the end of the time you see how many you were able to get right, and you receive a rating as a password hacker.<br/><br/><b>What Hackability teaches</b><br/><br/>The idea is to encourage people to set longer passwords (or even avoid them altogether by using biometric authentication). In the game it invites you to imagine how much harder it would be to hack passwords that aren't just short, simple words. If you make your own passwords longer (13 characters or more), and add numbers, capital letters and special characters, they will be much stronger.
+<br/><br/>
+<a className="feature-link" href="https://harrogateinteractive.co.uk/hackability">Tap here to play HackAbility</a>
+<br/><br/>
+</p></div>
+<div className="feature-container-right">
+    <img className="hackabilityimage" alt="Hackability password game" src={Ability}/>
+    <p><span style={{backgroundColor:'var(--brand-feature)',padding:'5px',color:'var(--brand-main)'}}><b>Perfect for:</b> lovers of Wordle</span></p>
+</div>
+
+</div>
+
+
+    
+<div id="cybersecuritymanager" className="feature-container darker">
+<div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">Cyber Security Manager</h1><p>Cyber Security Manager is an immersive cyber security game following a narrative style. It gives players the chance to see the world from the perspective of someone with overall responsibility for a company's protection, allowing players to better understand why security decisions are taken.<br/><br/><b>How it works</b><br/><br/>In Cyber Security Manager you're a newly-recruited head of cyber security and faced with the kinds of tasks and situations that can make or break an organisation. Your goal is to create an inspired security culture as well as an effective set of security controls. It's all about finding the right balance. <br/><br/>The game is best on desktop PCs but works on mobile too. It's perfect for anyone who wants to dive a little deeper in gamified learning. 
+<br/><br/>
+<a className="feature-link" href="https://harrogateinteractive.co.uk/csm">Tap to play Cyber Security Manager</a>
+<br/><br/>
+</p></div>
+
+<div className="feature-container-right">
+
+    <img className="hackabilityimage" alt="Hackability password game" src={CSM}/>
+    <img className="hackabilityimage" alt="Hackability password game" src={CSM2}/>
+
+    <p><span style={{backgroundColor:'var(--brand-feature)',padding:'5px',color:'var(--brand-main)'}}><b>Perfect for:</b> fans of interactive fiction</span></p>
+</div>
+
+</div>
+
+
+    
+
+
+
+
     <div className="flex-centered-start">
     
     <div className="blue-panel" id="bluePanel"> 
     <FadeInSection>
-    <h1 className="line-to-left gradient-text">rqwereqwrerWant something bespoke? You'll click with us.</h1></FadeInSection>
+    <h1 className="line-to-left gradient-text">What are you into?</h1></FadeInSection>
     <FadeInSection>
-    <p className="intro-copy">At Harrogate Interactive we create custom digital products that look good and work beautifully. With experience in everything from branding and web design to education and online software development, we like to keep things versatile. We're also friendly and love to chat about - and find new ways of looking at - all aspects of life online.<br/><br/><span id="askUs">Ask us about: </span> 
+    <p className="intro-copy">Harrogate Interactive is a showcase of my passion for digital design and coding (any excuse to sit with the radio on and my laptop open). I'm always happy to chat with folks who share similar interests. This could be anything from brand development and web design to education and software development - all aspects of life online, really. <br/><br/>
         Branding | Graphic design | Copywriting | Web design | Web development | Software development | SharePoint development | React development | WordPress development | AI chatbot integration | Corporate education | Video creation 
         </p>
     </FadeInSection> 
@@ -49,7 +115,7 @@ return (
 
 
     <div id="approach">
-    <h1 id="ourApproach">Our Approach<br/>in <span id="one-underline">one</span> word</h1>
+    <h1 id="ourApproach">My Philosophy<br/>in <span id="one-underline">one</span> word</h1>
     <FadeInSection>
     <div id="skills">
         
