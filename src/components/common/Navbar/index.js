@@ -7,7 +7,6 @@ const Navbar = () => {
 
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
   const controlNavbar = () => {
     if (typeof window !== 'undefined') { 
       if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
@@ -36,15 +35,18 @@ const Navbar = () => {
   return (
     
     <div className={`normal-nav ${show && 'reverse-nav'}`} id="topNav">
-    
+        <div className="nav-restrainer">
+   
       <Link to="/">
 <div className="logo-lockup">
         <img className="logo-image" src={ logo }/>
-        <p className="logo-title">Harrogate Interactive<br/>Digital creative agency</p>
+        <p className="logo-title">Harrogate Interactive<br/>Digital creative</p>
         </div>
         </Link>
 
         <div className="nav-links" id="navLinks">
+        
+            
         <a href="javascript:void(0);" class="hamburgerIcon" onClick={function myFunction() {
   var x = document.getElementById("navLinks");
   var y = document.getElementsByClassName('nav-link');
@@ -62,11 +64,14 @@ const Navbar = () => {
             <a className="nav-link"><Link to='/'>Home</Link></a>
             <a className="nav-link"><Link to='/about'>About</Link></a>
             <a className="nav-link"><Link to='/posts'>Posts</Link></a>
+            <a className="nav-link" href="https://harrogateinteractive.co.uk/checker/" target="_top">Social Checker</a>
             <a className="nav-link nav-feature"><Link to="/contact">Contact</Link></a>
            
+            </div>
+        
+
    </div>
    </div>
- 
   )
 }
 

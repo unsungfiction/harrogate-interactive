@@ -1,5 +1,4 @@
 import { React, useState} from 'react';
-import "./index.css";
 import video from "./video.mp4";
 import lion from "./lion.jpg";
 import ContactUs from "../ContactUs";
@@ -27,7 +26,7 @@ return (
     
     <div className="blue-panel" id="bluePanel"> 
     <FadeInSection>
-    <h1 className="line-to-left gradient-text">Want something bespoke? You'll click with us.</h1></FadeInSection>
+    <h1 className="line-to-left gradient-text">rqwereqwrerWant something bespoke? You'll click with us.</h1></FadeInSection>
     <FadeInSection>
     <p className="intro-copy">At Harrogate Interactive we create custom digital products that look good and work beautifully. With experience in everything from branding and web design to education and online software development, we like to keep things versatile. We're also friendly and love to chat about - and find new ways of looking at - all aspects of life online.<br/><br/><span id="askUs">Ask us about: </span> 
         Branding | Graphic design | Copywriting | Web design | Web development | Software development | SharePoint development | React development | WordPress development | AI chatbot integration | Corporate education | Video creation 
