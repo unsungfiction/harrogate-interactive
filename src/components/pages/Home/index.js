@@ -10,16 +10,25 @@ import dogOffice from './office.jpg';
 import Ability from './ability.JPG';
 import CSM from './csm.JPG';
 import CSM2 from './CSM2.JPG';
+import Dads1 from './dads1.JPG';
+import Dads2 from './dads2.JPG';
+import DadsLogo from './dadslogo.png'
+
+const handleClick = (event) => {
+    const offering = event.currentTarget;
+    offering.classList.toggle("expanded");
+  };
+
+
 const Home = () => {
 
  
-    
-
+ 
 return (
     <div className="overall-container">
    <div className="fullscreen">
     {/* <div className="letterbox" id="letterBox" style={{background: 'linear-gradient(45deg, #00e5b3dd,#000036dd,#000000ff), url(' + fancyBG + ')', backgroundSize: 'cover',backgroundRepeat:'no-repeat' }}> */}
-    <div className="letterbox" id="letterBox">
+    <div className="letterbox">
     <div className="hero-text"> <h1 className="large-feature-text">Fine software <span>handmade</span> in Harrogate</h1></div>
     <div className="dogoffice"><img src={dogOffice}/></div>
     {/* <div className="hero-video-container">  </div> */}
@@ -51,7 +60,7 @@ return (
 
 
 <div id="hackability" className="feature-container darker">
-<div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">HackAbility</h1><p>This cyber security game is designed to get people thinking about passwords. In the game, you spend 60 seconds trying to work out a random series of four-letter words (no bad language, I'm afraid - you'll have to go elsewhere for that sh*t). Then at the end of the time you see how many you were able to get right, and you receive a rating as a password hacker.<br/><br/><b>What Hackability teaches</b><br/><br/>The idea is to encourage people to set longer passwords (or even avoid them altogether by using biometric authentication). In the game it invites you to imagine how much harder it would be to hack passwords that aren't just short, simple words. If you make your own passwords longer (13 characters or more), and add numbers, capital letters and special characters, they will be much stronger.
+<div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">HackAbility</h1><p>Hackability is cyber security game designed to get people thinking about passwords. In the game, you spend 60 seconds trying to work out a random series of four-letter words (no bad language, I'm afraid - you'll have to go elsewhere for that sh*t). Then at the end of the time you see how many you were able to get right, and you receive a rating as a password hacker.<br/><br/><b>What Hackability teaches</b><br/><br/>The idea is to encourage people to set longer passwords (or even avoid them altogether by using biometric authentication). In the game it invites you to imagine how much harder it would be to hack passwords that aren't just short, simple words. If you make your own passwords longer (13 characters or more), and add numbers, capital letters and special characters, they will be much stronger.
 <br/><br/>
 <a className="feature-link" href="https://harrogateinteractive.co.uk/hackability">Play HackAbility</a>
 <br/><br/>
@@ -62,6 +71,24 @@ return (
 </div>
 
 </div>
+
+
+<div id="dadsoftheworld" className="feature-container lighter">
+<div className="tech-box"><h5 className="tag-class">WEBSITE | CUSTOM WORDPRESS THEME</h5><h1  className="line-below">Dads of the World</h1><p>Dads of the World is a WordPress website that uses a theme I created entirely from scratch for the site. I thought it would be a good way to learn PHP and wanted to have a base to work with in WordPress that I understand completely from the ground up. This way I can make changes to the style or functionality without restrictions. Once I had the site designed and running, I installed a popular WordPress forum in order to learn how that works and am still adding to the site and building it as I go.<br/><br/><b>Why Dads of the World?</b><br/><br/>The idea for the site is create a kind of hub for dads and mums, covering everything from advice and reviews to jokes and pranks. The content is positive and uplifting: all about being the best parents we can possibly be.
+<br/><br/>
+<a className="feature-link" href="https://dadsoftheworld.com/" target="_blank">Visit Dads of the World</a>
+<br/><br/>
+</p></div>
+<div className="feature-container-right">
+<img className="dadslogo" alt="Dads of the world forum and website" src={DadsLogo}/>
+    <img className="hackabilityimage" alt="Dads of the world forum and website" src={Dads1}/>
+    <img className="hackabilityimage" alt="Dads of the world forum and website" src={Dads2}/>
+
+    <p><span style={{backgroundColor:'var(--brand-feature)',padding:'5px',color:'var(--brand-main)'}}><b>Feel free to try out the forum!</b></span></p>
+</div>
+
+</div>
+
 
 
     
@@ -158,7 +185,7 @@ return (
 <div id="harrogate_design_container">
 
 <div className="harrogate_design" style={{backgroundImage: "linear-gradient(90deg, #000036aa,#00e5b3bb), url(" + HGBackground + ")"}}>
-<h1 className="design_harrogate">The view from my office<br/>(if I work from a cafe)</h1>
+<h1 className="design_harrogate">The view from my office<br/>(if I work in a cafe)</h1>
 
 </div>
 </div>
@@ -173,28 +200,28 @@ return (
 
 <div id="offerings">
 <h1 className="brand-text underlined">My process</h1>
-<button className="offering">
+<button className="offering" onClick={handleClick}>
 <h2>Scoping<FaAngleDown className="faangledown"/></h2>
 
-<ul><li>These interactive projects are done in my spare time, between the demands of work and family. So the most important consideration is usually: is this something I can actually do in those spare half hours I get every couple of days? Another question that I ask myself at this stage is: will this project inform or improve the work I do in my day job? If I'm satisfied that the job can and should be done, I move on to ideation.</li></ul>
+<ul><li>These projects are done between the demands of work and family. So the most important consideration is usually: is this something I can actually do in those spare half hours I get every couple of days? Another question that I ask myself at this stage is: will this project inform or improve the work I do in my day job? If I'm satisfied that the job can and should be done, I move on to ideation.</li></ul>
 </button>
 
-<button className="offering">
+<button className="offering" onClick={handleClick}>
 <h2>Ideation<FaAngleDown className="faangledown"/></h2>
 <ul><li>I like to have a quick planning session before I start work, mainly to create a pot of creative concepts I can draw on later on in the process. These include everything from ideas for the names of things to designs I can use as logos or images. I also try to envision what the final website, app, tool or game will look like, but don't try to be too restrictive. I find that if I plan too much, it takes the joy out of the process and creates constraints that are sometimes not helpful. This is the waterfall process vs. agile. And I'm definitely in favour of agile development.</li></ul>
 </button>
 
-<button className="offering">
+<button className="offering" onClick={handleClick}>
 <h2>Prototyping<FaAngleDown className="faangledown"/></h2>
 <ul><li>I start designing and building as soon as possible, with the view to getting a prototype running. This allows me to at least have <i>something</i> working that I can assess and improve on. It's also good to create functions and layouts as soon as possible in order for me to see what actually needs attention and what doesn't. I'm often surprised by how easy some of the complex functions can be and, conversely, have been bogged down in the past in solving things that aren't even that important to the final product. I work quickly, get to the finish line and then go back and take my time to enjoy the process again in the next.</li></ul>
 </button>
 
-<button className="offering">
+<button className="offering" onClick={handleClick}>
 <h2>Improvement<FaAngleDown className="faangledown"/></h2>
 <ul><li>Once I have my prototype I go back and start reworking it. And reworking it. It's an iterative process that has no end, really, because there's always something that can be tweaked. For me, this is the really fun part, because I like to try different things and see what can be done in terms of the looks and with CSS and Javascript.</li></ul>
 </button>
 
-<button className="offering">
+<button className="offering" onClick={handleClick}>
 <h2>Assesssment<FaAngleDown className="faangledown"/></h2>
 <ul><li>The point of these projects is to hone the skills that I use in my day-to-day work. It's also fun seeing what I'm capable of and what can be created on the web. I always look back at what works and what doesn't and use this information to inform my next project. And so the cycle begins again!</li></ul>
 </button>

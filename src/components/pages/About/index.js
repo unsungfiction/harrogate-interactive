@@ -4,7 +4,7 @@ import FadeInSection from '../../common/FadeInSection'
 import { FaShirt, FaWrench, FaPen } from 'react-icons/fa6';
 import Sheep from './sheep.jpg';
 import HGBackground from './harrogate.jpg';
-
+import lightbulb from './lightbulb2.jpg';
 const About = () => {
 
 
@@ -12,18 +12,19 @@ return (
 <>
 <div className="overall-container">
 <div className="fullscreen">
-    <div className="letterbox" id="letterBox">
-    <div className="sheep-container">  <img className="sheep" src={Sheep}/></div>
-   <div className="hero-text"> <h1 className="large-feature-text">Software that<br></br><span className="standout-block">stands out</span></h1></div>
+    <div className="letterbox pink">
+    <div className="hero-text"> <h1 className="large-feature-text">Serious about messing around on computers</h1></div>
+    <div className="dogoffice"><img src={lightbulb}/></div>
 
+   
  
     </div>
     </div>
 
 <div id="double">
 <div class="container half">
-<h1 className="gradient-text-3">Who we are</h1>
-<p className="whoweare">Based in Harrogate, North Yorkshire, we are a <span className="mark">boutique creative agency</span> focusing on design, copywriting, course creation and coding. Our experience goes back twenty years and covers <span className="highlighter">advertising</span>, <span className="highlighter">marketing</span>, <span className="highlighter">online software development</span> and <span className="highlighter">education</span>. We have worked for creative agencies and in-house. We have worked in a spread of industries and countries. If you can think of it, we've probably done it. And if we haven't done it, we'll find a way.</p>
+<h1 className="gradient-text-3">Who am I?</h1>
+<p className="whoweare">Based in Harrogate, North Yorkshire, I work in corporate education focusing on design, copywriting, course creation and coding. My experience goes back twenty years and covers <span className="highlighter">advertising</span>, <span className="highlighter">marketing</span>, <span className="highlighter">online software development</span> and <span className="highlighter">education</span>. We have worked for creative agencies and in-house. We have worked in a spread of industries and countries. If you can think of it, we've probably done it. And if we haven't done it, we'll find a way.</p>
 </div>
 
 

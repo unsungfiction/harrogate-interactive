@@ -220,6 +220,9 @@ color: white;
   opacity: 1;
 }
 
+.pink {
+  background: linear-gradient(45deg,rgb(183, 183, 99),var(--brand-main),#000);
+}
 
 .hero-text {
   display: flex; 
@@ -1000,6 +1003,11 @@ background-size: 10px 10px;
 padding-bottom: 20px;
 }
 
+.dadslogo {
+  width: 100px; 
+  margin: 20px auto; 
+}
+
 .offering {
   width: 50%; 
   border: none; 
@@ -1011,23 +1019,14 @@ padding-bottom: 20px;
   border: 5px solid rgb(240, 240, 240,1); 
   border-radius: 20px;
   cursor: pointer; 
-  
-  /* border-left: 10px solid var(--brand-main); */
+  overflow: hidden; 
+  transition: 1s; 
 }
 
-/* .offering:nth-child(odd) {
-  padding: 10px; 
-  background: linear-gradient(90deg, white,rgba(255, 255, 255, .6)); 
-  color: var(--brand-main); 
-  border-left: 10px solid var(--brand-feature);
+/* .expanded {
+  height: auto; 
 } */
-/* 
-.offering:nth-child(even) {
-    padding: 10px; 
-    background: linear-gradient(90deg, white,rgba(255, 255, 255, .6));
-    color: var(--brand-main); 
-    border-left: 10px solid var(--brand-main);
-  } */
+
 
 .offering h2 {
   margin: 0; 
@@ -1038,11 +1037,32 @@ padding-bottom: 20px;
 .offering ul {
   list-style: none;
   opacity: 0;  
+  font-size:0;
 transform: scale(.1);
-font-size: 1pt;  
+ height: 0; 
 text-align:left; 
+transition: opacity 1s; 
+transition-delay: 1s; 
 }
 
+.offering.expanded ul {
+  opacity: 0;
+  transform: scale(1);
+  height: auto; 
+  transition-delay: 1s; 
+  font-size: 12pt; 
+  animation-name: fonter;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fonter {
+  0%{opacity:0}
+  99%{opacity:0;}
+  100%{opacity:1;}
+}
+
+/* 
 .offering:hover {
 border: 5px solid var(--brand-main);
 }
@@ -1079,7 +1099,7 @@ border: 5px solid var(--brand-main);
   animation-delay: .5s; 
   animation-fill-mode: forwards; 
   pointer-events:none;
-}
+} */
 
 
 .faangledown {
