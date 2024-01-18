@@ -4,6 +4,7 @@ import axios from 'axios';
 import './index.css';
 import FadeInSection from '../../common/FadeInSection';
 import Lion from "./lion.jpg";
+import Loudhailer from "./loudhailer2.jpg"
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -27,18 +28,15 @@ const Posts = () => {
   return (
     <>
       <div id="posts-body">
-        <div className="fullscreen">
-          <div className="letterbox" id="letterBox">
-            <div className="sheep-container">
-              <img className="sheep" src={Lion} />
-            </div>
-            <div className="hero-text">
-              <h1 className="large-feature-text">
-                The fresh scent of <span className="standout-block">ideas</span>
-              </h1>
-            </div>
-          </div>
-        </div>
+      <div className="fullscreen">
+    <div className="letterbox pink2">
+    <div className="hero-text"> <h1 className="large-feature-text">Web development updates for serious surfers</h1></div>
+    <div className="dogoffice"><img src={Loudhailer}/></div>
+
+   
+ 
+    </div>
+    </div>
 
         <h1 id="posts-header">Posts</h1>
 

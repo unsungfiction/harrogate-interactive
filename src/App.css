@@ -221,7 +221,21 @@ color: white;
 }
 
 .pink {
-  background: linear-gradient(45deg,rgb(183, 183, 99),var(--brand-main),#000);
+  background: linear-gradient(45deg,rgb(253, 214, 111),var(--brand-main),#000);
+}
+
+.pink2 {
+  background: linear-gradient(45deg,var(--brand-inverted),var(--brand-main),#000);
+}
+
+.readmore {
+  color: var(--brand-main);
+  text-decoration: underline; 
+  cursor: pointer;
+}
+
+.readmore:hover {
+  color: var(--brand-feature);
 }
 
 .hero-text {
@@ -1190,6 +1204,11 @@ opacity: .5;
 .whoweare {
   font-size: 14pt; 
 }
+
+.about-me-image {
+
+}
+
 .highlighter {
 /* background: rgba(255, 255, 0, 0.496); */
 background: linear-gradient(45deg, var(--brand-feature-opacity),var(--brand-feature-opacity-2),var(--brand-feature-opacity));
