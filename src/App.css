@@ -1685,7 +1685,11 @@ border-radius: 30px;
 
 #privacypolicy {
   display: none; 
-
+  position: absolute; 
+  background: var(--brand-main); 
+bottom: 0;
+left: 0; 
+padding: 30px; 
 }
 
 #privacypolicyp {

@@ -14,7 +14,7 @@ import Dads1 from './dads1.JPG';
 import Dads2 from './dads2.JPG';
 import Pins1 from './busypins1.JPG';
 import Pins2 from './busypins3.JPG';
-import Pins3 from './busypins4.JPG';
+import Pins3 from './busypins5.JPG';
 import DadsLogo from './dadslogo.png'
 
 const handleClick = (event) => {
@@ -115,8 +115,8 @@ return (
 
 
 <div id="busypins" className="feature-container lighter">
-<div className="tech-box"><h5 className="tag-class">PRODUCTIVITY APP</h5><h1  className="line-below">BusyPins Planner</h1><p>
-BusyPins Planner is an online interactive Eisenhower matrix that is free to use. If you're wondering what an 'Eisenhower matrix' is, it's a planning tool to evaluate tasks according to importance and urgency.
+<div className="tech-box"><h5 className="tag-class">PRODUCTIVITY APP</h5><h1  className="line-below">BusyPins</h1><p>
+BusyPins is an online interactive Eisenhower matrix that is free to use. If you're wondering what an 'Eisenhower matrix' is, it's a planning tool to evaluate tasks according to importance and urgency.
 BusyPins is divided into four quadrants: urgent and important, urgent but unimportant, important but not urgent, and unimportant and not urgent. This is a great way to visualise what you need to do next in work or life.
 <br/><br/><b>How does BusyPins work?</b><br/><br/>
 To insert a new item simply tap the + button in the middle of planner. Drag the item to move it. Double click the text to change it. Enjoy!
@@ -129,7 +129,7 @@ To insert a new item simply tap the + button in the middle of planner. Drag the 
     <img className="hackabilityimage" alt="Busypins planning tool" src={Pins1}/>
     <img className="hackabilityimage" alt="Busypins planning tool" src={Pins2}/>
 
-    <p><span style={{backgroundColor:'var(--brand-feature)',padding:'5px',color:'var(--brand-main)'}}><b>Perfect for busy lives</b></span></p>
+    <p><span style={{backgroundColor:'var(--brand-feature)',padding:'5px',color:'var(--brand-main)'}}><b>Sort out your busy life</b></span></p>
 </div>
 
 </div>
@@ -144,7 +144,7 @@ To insert a new item simply tap the + button in the middle of planner. Drag the 
     <FadeInSection>
     <h1 className="line-to-left gradient-text">What are you into?</h1></FadeInSection>
     <FadeInSection>
-    <p className="intro-copy">Harrogate Interactive is all about digital design and coding (or any activity that lets me sit with the radio on and laptop open). I'm always happy to chat with folks who share similar interests. This could be anything from brand development and web design to education and software development - all aspects of life online, really.<br/><br/>Things that get me excited: 
+    <p className="intro-copy">I started this site to focus on digital design and coding (or any activity that lets me sit with the radio on and laptop open). I'm always happy to chat with folks who share similar interests. This could be anything from brand development and web design to education and software development - all aspects of life online, really.<br/><br/>Things that get me excited: 
         Branding | Graphic design | Copywriting | Web design | Web development | Software development | SharePoint development | React development | WordPress development | AI chatbot integration | Corporate education | Video creation 
         </p>
     </FadeInSection> 
