@@ -12,6 +12,9 @@ import CSM from './csm.JPG';
 import CSM2 from './CSM2.JPG';
 import Dads1 from './dads1.JPG';
 import Dads2 from './dads2.JPG';
+import Pins1 from './busypins1.JPG';
+import Pins2 from './busypins3.JPG';
+import Pins3 from './busypins4.JPG';
 import DadsLogo from './dadslogo.png'
 
 const handleClick = (event) => {
@@ -62,7 +65,7 @@ return (
 <div id="hackability" className="feature-container darker">
 <div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">HackAbility</h1><p>Hackability is cyber security game designed to get people thinking about passwords. In the game, you spend 60 seconds trying to work out a random series of four-letter words (no bad language, I'm afraid - you'll have to go elsewhere for that sh*t). Then at the end of the time you see how many you were able to get right, and you receive a rating as a password hacker.<br/><br/><b>What Hackability teaches</b><br/><br/>The idea is to encourage people to set longer passwords (or even avoid them altogether by using biometric authentication). In the game it invites you to imagine how much harder it would be to hack passwords that aren't just short, simple words. If you make your own passwords longer (13 characters or more), and add numbers, capital letters and special characters, they will be much stronger.
 <br/><br/>
-<a className="feature-link" href="https://harrogateinteractive.co.uk/hackability">Play HackAbility</a>
+<a className="feature-link" href="https://harrogateinteractive.co.uk/hackability/" target="_blank">Play HackAbility</a>
 <br/><br/>
 </p></div>
 <div className="feature-container-right">
@@ -74,7 +77,7 @@ return (
 
 
 <div id="dadsoftheworld" className="feature-container lighter">
-<div className="tech-box"><h5 className="tag-class">WEBSITE | CUSTOM WORDPRESS THEME</h5><h1  className="line-below">Dads of the World</h1><p>Dads of the World is a WordPress website that uses a theme I created entirely from scratch for the site. I thought it would be a good way to learn PHP and wanted to have a base to work with in WordPress that I understand completely from the ground up. This way I can make changes to the style or functionality without restrictions. Once I had the site designed and running, I installed a popular WordPress forum in order to learn how that works and am still adding to the site and building it as I go.<br/><br/><b>Why Dads of the World?</b><br/><br/>The idea for the site is create a kind of hub for dads and mums, covering everything from advice and reviews to jokes and pranks. The content is positive and uplifting: all about being the best parents we can possibly be.
+<div className="tech-box"><h5 className="tag-class">WEBSITE | CUSTOM WORDPRESS THEME</h5><h1  className="line-below">Dads of the World</h1><p>Dads of the World is a WordPress website that uses a theme I created entirely from scratch for the site. I thought it would be a good way to learn PHP and wanted to have a base to work with in WordPress that I understood completely from the ground up. This way I can make changes to the style or functionality without restrictions. Once I had the site designed and running, I installed a popular WordPress forum in order to learn how that works and am still adding to the site and building it as I go.<br/><br/><b>Why Dads of the World?</b><br/><br/>The idea for the site is to create a kind of hub for dads and mums, covering everything from advice and reviews to jokes and pranks. The content is positive and uplifting: all about being the best parents we can possibly be.
 <br/><br/>
 <a className="feature-link" href="https://dadsoftheworld.com/" target="_blank">Visit Dads of the World</a>
 <br/><br/>
@@ -95,7 +98,7 @@ return (
 <div id="cybersecuritymanager" className="feature-container darker">
 <div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">Cyber Security Manager</h1><p>Cyber Security Manager is an immersive cyber security game following a narrative style. It gives players the chance to see the world from the perspective of someone with overall responsibility for a company's protection, allowing players to better understand why security decisions are taken.<br/><br/><b>How it works</b><br/><br/>In Cyber Security Manager you're a newly-recruited head of cyber security and faced with the kinds of tasks and situations that can make or break an organisation. Your goal is to create an inspired security culture as well as an effective set of security controls. It's all about finding the right balance. <br/><br/>The game is best on desktop PCs but works on mobile too. It's perfect for anyone who wants to dive a little deeper in gamified learning. 
 <br/><br/>
-<a className="feature-link" href="https://harrogateinteractive.co.uk/csm">Play Cyber Security Manager</a>
+<a className="feature-link" href="https://harrogateinteractive.co.uk/csm/" target="_blank">Play Cyber Security Manager</a>
 <br/><br/>
 </p></div>
 
@@ -110,6 +113,26 @@ return (
 </div>
 
 
+
+<div id="busypins" className="feature-container lighter">
+<div className="tech-box"><h5 className="tag-class">PRODUCTIVITY APP</h5><h1  className="line-below">BusyPins Planner</h1><p>
+BusyPins Planner is an online interactive Eisenhower matrix that is free to use. If you're wondering what an 'Eisenhower matrix' is, it's a planning tool to evaluate tasks according to importance and urgency.
+BusyPins is divided into four quadrants: urgent and important, urgent but unimportant, important but not urgent, and unimportant and not urgent. This is a great way to visualise what you need to do next in work or life.
+<br/><br/><b>How does BusyPins work?</b><br/><br/>
+To insert a new item simply tap the + button in the middle of planner. Drag the item to move it. Double click the text to change it. Enjoy!
+<br/><br/>
+<a className="feature-link" href="https://harrogateinteractive.co.uk/busypins/" target="_blank">Access BusyPins</a>
+<br/><br/>
+</p></div>
+<div className="feature-container-right">
+<img className="hackabilityimage" alt="Busypins planning tool" src={Pins3}/>
+    <img className="hackabilityimage" alt="Busypins planning tool" src={Pins1}/>
+    <img className="hackabilityimage" alt="Busypins planning tool" src={Pins2}/>
+
+    <p><span style={{backgroundColor:'var(--brand-feature)',padding:'5px',color:'var(--brand-main)'}}><b>Perfect for busy lives</b></span></p>
+</div>
+
+</div>
     
 
 

@@ -54,7 +54,7 @@ return (
 <div id="double">
 <div class="container half">
 <h1 className="gradient-text-3">How the site is put together</h1>
-<p className="whoweare">Harrogate Interactive is built using React, the ever-popular Javascript framework, combined with WordPress, the world's most prevalent web content management system. I've combined the two so that I can easily create components and updates to the interface using React and then easily create blog posts if needed using the user-friendly WordPress interface (no need to crack open my laptop even, because I can log in on my phone). So, it's a best-of-both worlds site in terms of maintenance and useability for me. <a href="http://localhost:3000/headless-wordpress-and-react-best-of-both-worlds" target="_blank" className="readmore">Read more here ></a></p>
+<p className="whoweare">Harrogate Interactive is built using React, the ever-popular Javascript framework, combined with WordPress, the world's most prevalent web content management system. I've combined the two so that I can easily create components and updates to the interface using React and then easily create blog posts if needed using the user-friendly WordPress interface (no need to crack open my laptop even, because I can log in on my phone). So, it's a best-of-both worlds site in terms of maintenance and useability for me. <a href="https://harrogateinteractive.co.uk/headless-wordpress-and-react-best-of-both-worlds" target="_blank" className="readmore">Read more here ></a></p>
 </div>
 
 <div className="feature-container-right">

@@ -64,7 +64,7 @@ const Navbar = () => {
             <a className="nav-link"><Link to='/'>Home</Link></a>
             <a className="nav-link"><Link to='/about'>About</Link></a>
             <a className="nav-link"><Link to='/posts'>Posts</Link></a>
-            <a className="nav-link" href="https://harrogateinteractive.co.uk/checker/" target="_top">Social Checker</a>
+            {/* <a className="nav-link" href="https://harrogateinteractive.co.uk/checker/" target="_top">Social Checker</a> */}
             <a className="nav-link nav-feature"><Link to="/contact">Contact</Link></a>
            
             </div>
