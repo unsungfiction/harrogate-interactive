@@ -19,9 +19,9 @@ const Pages = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/posts" element={<Posts />} />
+        {/* <Route path="/posts" element={<Posts />} />
         {/* Render BlogPost or NotFound based on the result */}
-        <Route path="/:slug" element={<RenderBlogPost />} />
+        <Route path="/:slug" element={<RenderBlogPost />} /> */}
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<PageNotFound />} />
        

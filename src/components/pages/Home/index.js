@@ -15,7 +15,9 @@ import Dads2 from './dads2.JPG';
 import Pins1 from './busypins1.JPG';
 import Pins2 from './busypins3.JPG';
 import Pins3 from './busypins5.JPG';
-import DadsLogo from './dadslogo.png'
+import DadsLogo from './dadslogo.png';
+import Social1 from './social1.PNG';
+import Social2 from './social2.PNG';
 
 const handleClick = (event) => {
     const offering = event.currentTarget;
@@ -60,12 +62,29 @@ return (
 </div>
 
 </div>
+<div id="socialchecker" className="feature-container lighter">
+<div className="tech-box"><h5 className="tag-class">CUSTOM APP</h5><h1  className="line-below">Get Safe Online: Social Footprint Checker</h1><p>Working with Get Safe Online, we developed a social media digital footprint checker. It's fun, of course, but it's also much needed in a world where people share everything with everyone.<br/><br/><b>How was it developed?</b><br/><br/>Our idea was to teach people that they're leaving behind a trail by using a metaphor to visually demonstrate the concept. Types of shoes came to mind and we had loads of fun choosing the different styles to represent various levels of social media usage and the footprints they leave behind. The next step was to design and build the app in Javascript, and then share it to be hosted to run from Get Safe Online site. 
+<br/><br/>
+<a className="feature-link" href="https://www.getsafeonline.org/socialchecker/" target="_blank">Visit Get Safe Online and try it out</a>
+<br/><br/>
 
+</p>
+
+
+</div>
+<div className="feature-container-right">
+    <img className="hackabilityimage" alt="Dads of the world forum and website" src={Social1}/>
+    <img className="hackabilityimage" alt="Dads of the world forum and website" src={Social2}/>
+{/* 
+    <p><span style={{backgroundColor:'var(--brand-feature)',padding:'5px',color:'var(--brand-main)'}}><b>Feel free to try out the forum!</b></span></p> */}
+</div>
+
+</div>
 
 <div id="hackability" className="feature-container darker">
 <div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">HackAbility</h1><p>Hackability is cyber security game designed to get people thinking about passwords. In the game, you spend 60 seconds trying to work out a random series of four-letter words (no bad language, I'm afraid - you'll have to go elsewhere for that sh*t). Then at the end of the time you see how many you were able to get right, and you receive a rating as a password hacker.<br/><br/><b>What Hackability teaches</b><br/><br/>The idea is to encourage people to set longer passwords (or even avoid them altogether by using biometric authentication). In the game it invites you to imagine how much harder it would be to hack passwords that aren't just short, simple words. If you make your own passwords longer (13 characters or more), and add numbers, capital letters and special characters, they will be much stronger.
 <br/><br/>
-<a className="feature-link" href="https://harrogateinteractive.co.uk/hackability/" target="_blank">Play HackAbility</a>
+{/* <a className="feature-link" href="https://harrogateinteractive.co.uk/hackability/" target="_blank">Play HackAbility</a> */}
 <br/><br/>
 </p></div>
 <div className="feature-container-right">
@@ -79,7 +98,7 @@ return (
 <div id="dadsoftheworld" className="feature-container lighter">
 <div className="tech-box"><h5 className="tag-class">WEBSITE | CUSTOM WORDPRESS THEME</h5><h1  className="line-below">Dads of the World</h1><p>Dads of the World is a WordPress website that uses a theme I created entirely from scratch for the site. I thought it would be a good way to learn PHP and wanted to have a base to work with in WordPress that I understood completely from the ground up. This way I can make changes to the style or functionality without restrictions. Once I had the site designed and running, I installed a popular WordPress forum in order to learn how that works and am still adding to the site and building it as I go.<br/><br/><b>Why Dads of the World?</b><br/><br/>The idea for the site is to create a kind of hub for dads and mums, covering everything from advice and reviews to jokes and pranks. The content is positive and uplifting: all about being the best parents we can possibly be.
 <br/><br/>
-<a className="feature-link" href="https://dadsoftheworld.com/" target="_blank">Visit Dads of the World</a>
+{/* <a className="feature-link" href="https://dadsoftheworld.com/" target="_blank">Visit Dads of the World</a> */}
 <br/><br/>
 </p></div>
 <div className="feature-container-right">
@@ -98,7 +117,7 @@ return (
 <div id="cybersecuritymanager" className="feature-container darker">
 <div className="tech-box"><h5 className="tag-class">GAME</h5><h1  className="line-below">Cyber Security Manager</h1><p>Cyber Security Manager is an immersive cyber security game following a narrative style. It gives players the chance to see the world from the perspective of someone with overall responsibility for a company's protection, allowing players to better understand why security decisions are taken.<br/><br/><b>How it works</b><br/><br/>In Cyber Security Manager you're a newly-recruited head of cyber security and faced with the kinds of tasks and situations that can make or break an organisation. Your goal is to create an inspired security culture as well as an effective set of security controls. It's all about finding the right balance. <br/><br/>The game is best on desktop PCs but works on mobile too. It's perfect for anyone who wants to dive a little deeper in gamified learning. 
 <br/><br/>
-<a className="feature-link" href="https://harrogateinteractive.co.uk/csm/" target="_blank">Play Cyber Security Manager</a>
+{/* <a className="feature-link" href="https://harrogateinteractive.co.uk/csm/" target="_blank">Play Cyber Security Manager</a> */}
 <br/><br/>
 </p></div>
 
@@ -121,7 +140,7 @@ BusyPins is divided into four quadrants: urgent and important, urgent but unimpo
 <br/><br/><b>How does BusyPins work?</b><br/><br/>
 To insert a new item simply tap the + button in the middle of planner. Drag the item to move it. Double click the text to change it. Enjoy!
 <br/><br/>
-<a className="feature-link" href="https://harrogateinteractive.co.uk/busypins/" target="_blank">Access BusyPins</a>
+{/* <a className="feature-link" href="https://harrogateinteractive.co.uk/busypins/" target="_blank">Access BusyPins</a> */}
 <br/><br/>
 </p></div>
 <div className="feature-container-right">
