@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router} from 'react-router-dom';
-import ScrollToTop from './components/common/ScrollToTop'
+import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './components/common/ScrollToTop';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<Router>
-<ScrollToTop />
-<App />
-</Router>
+  <Router basename="/">
+    <ScrollToTop />
+    <App />
+  </Router>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
